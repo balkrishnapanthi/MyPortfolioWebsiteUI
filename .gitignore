@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/PortfolioWebsiteSln/.vs/PortfolioWebsiteSln/v17
+/PortfolioWebsiteSln/.vs/PortfolioWebsiteSln/FileContentIndex
+/PortfolioWebsiteUI/.vscode
+/.vs/PortfolioWebsite/v17
+/.vs
+/PortfolioWebsiteSln/.vs/PortfolioWebsiteSln/config
