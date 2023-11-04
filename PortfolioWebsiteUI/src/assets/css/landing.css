@@ -288,7 +288,7 @@ html.sticky-header-active #header.header-effect-shrink .header-body {
 		font-size: 0.6rem;
 	}
 
-	#header .header-nav-main nav > ul li a .fa-caret-down:before {
+	#header .header-nav-main nav ul li a .fa-caret-down:before {
 		content: "\f078";
 	}
 
