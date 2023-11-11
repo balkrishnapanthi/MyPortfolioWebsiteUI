@@ -22,7 +22,7 @@
                 <nav>
                   <ul class="nav nav-pills" id="mainNav">
                     <li>
-                      <a class="nav-link" href="#home" data-hash data-hash-offset="120">
+                      <a class="nav-link" (click)="navigateToHome()" data-hash data-hash-offset="120">
                         Home
                       </a>
                     </li>
@@ -61,7 +61,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a class="nav-link dropdown-toggle" href="#">
+                      <a class="nav-link dropdown-toggle" routerLink="/contact">
                         Contact
                       </a>
                       <ul class="dropdown-menu">
