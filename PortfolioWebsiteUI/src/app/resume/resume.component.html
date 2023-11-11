@@ -1,90 +1,78 @@
 
 
 
+<div id="resumeContent">
+  <section class="resume-container">
 
-<section class="resume-container">
+    <div class="left-section">
+      <div class="profile-image">
+        <!-- Replace the following URL with the Unsplash image URL -->
+        <img src="assets/img/resumeImg.jpg" alt="Your Name">
+      </div>
 
-  <div class="left-section">
-    <div class="profile-image">
-      <!-- Replace the following URL with the Unsplash image URL -->
-      <img src="assets/img/resumeImg.jpg" alt="Your Name">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>Email: your.email@example.com</li>
+          <li>Phone: (123) 456-7890</li>
+          <li>LinkedIn: linkedin.com/in/yourname</li>
+          <li>GitHub: github.com/yourusername</li>
+        </ul>
+      </div>
+
+      <div class="education">
+        <h3>Education</h3>
+        <p>University Name - Bachelor's Degree in Computer Science</p>
+        <p>Graduation Year: 20XX</p>
+      </div>
+
+      <div class="skills">
+        <h3>Skills</h3>
+        <p>HTML, CSS, JavaScript, React, Node.js, etc.</p>
+      </div>
     </div>
 
-    <div class="contact-info">
-      <h2>Contact Information</h2>
-      <ul>
-        <li>Email: your.email@example.com</li>
-        <li>Phone: (123) 456-7890</li>
-        <li>LinkedIn: linkedin.com/in/yourname</li>
-        <li>GitHub: github.com/yourusername</li>
-      </ul>
-    </div>
+    <div class="right-section">
+      <div class="name-section">
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
+      </div>
 
-    <div class="education">
-      <h3>Education</h3>
-      <p>University Name - Bachelor's Degree in Computer Science</p>
-      <p>Graduation Year: 20XX</p>
-    </div>
+      <div class="description">
+        <p>
+          A passionate web developer with a focus on creating clean and efficient code.
+          Experienced in front-end technologies and dedicated to continuous learning.
+        </p>
+      </div>
 
-    <div class="skills">
-      <h3>Skills</h3>
-      <p>HTML, CSS, JavaScript, React, Node.js, etc.</p>
-    </div>
-  </div>
+      <div class="experience">
+        <h2>Work Experience</h2>
+        <h3>Company Name - Web Developer</h3>
+        <p>Employment Period: Month/Year - Month/Year</p>
+        <p>Description of responsibilities and achievements in this role.</p>
+      </div>
 
-  <div class="right-section">
-    <div class="name-section">
-      <h1>Your Name</h1>
-      <p>Web Developer</p>
-    </div>
+      <div class="hobbies">
+        <h2>Hobbies</h2>
+        <p>Reading, coding, hiking, photography</p>
+      </div>
 
-    <div class="description">
-      <p>
-        A passionate web developer with a focus on creating clean and efficient code.
-        Experienced in front-end technologies and dedicated to continuous learning.
-      </p>
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Proin accumsan gravida urna, sit amet ullamcorper libero commodo in.
+        </p>
+      </div>
     </div>
-
-    <div class="experience">
-      <h2>Work Experience</h2>
-      <h3>Company Name - Web Developer</h3>
-      <p>Employment Period: Month/Year - Month/Year</p>
-      <p>Description of responsibilities and achievements in this role.</p>
-    </div>
-
-    <div class="hobbies">
-      <h2>Hobbies</h2>
-      <p>Reading, coding, hiking, photography</p>
-    </div>
-
-    <div class="about-me">
-      <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Proin accumsan gravida urna, sit amet ullamcorper libero commodo in.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 <div class="download-button">
-  <button onclick="downloadResume()">Download Resume</button>
+  <button (click)="convetToPDF()">Download Resume</button>
 </div>
 
 
-<script>
 
-  function downloadResume() {
-    const element = document.getElementById('resume-container');
-
-    html2pdf(element, {
-      margin: 10,
-      filename: 'resume.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    });
-  }
-</script>
 
 
 
