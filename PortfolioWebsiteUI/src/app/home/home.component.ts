@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor() {
+    
+    let load = sessionStorage.getItem("HomeReload");    
+      if (load == "true") {
+        sessionStorage.setItem("HomeReload", "false");
+        window.location.reload();
+      }      
+    
+  }
+  ngOnDestroy() {
+    sessionStorage.setItem("HomeReload", "true");
+  }
+
 }
